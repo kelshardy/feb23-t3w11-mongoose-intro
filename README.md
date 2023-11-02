@@ -30,3 +30,16 @@ npm run dev
 node src/index.js
 	server.js
 		database.js 
+
+MongoDB with JSON Schema validation, not at all required or used specifically:
+<!-- db.createCollection("messages", {
+   validator: {
+      $jsonSchema: {
+         bsonType: "object",
+         // the required fields, no message without any of these fields
+         required: [ "text", "user", "likes"],
+         properties: {
+            text: {
+               bsonType: "string",
+               description: "must be a string and is required"
+            }, -->
